@@ -5,6 +5,7 @@
 }
 html{
     box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;;
 }
 body{
     margin: 0;
@@ -23,9 +24,6 @@ body{
     width: 650px;
     height: 400px;
     border-radius: 10px 100px / 120px;
-     
-    
-
     background-color: var(--colorBilletera);
     padding: 15px;
 }

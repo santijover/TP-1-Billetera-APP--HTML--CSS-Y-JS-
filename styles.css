@@ -42,10 +42,19 @@ main{                   /* Billetera + Gastos en MAIN */
     display: flex;
     justify-content: space-around;
 }
+
+h1{
+    font-size: 2rem;
+
+}
+i{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
 /* PROPIEDADES SOBRE LOS INPUTS EN GENERAL */
 
 .datosUser{
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 .border{
     border: none;
@@ -102,6 +111,7 @@ input:active{
 /*  */
 .monto-gasto{
     display: flex;
+    align-items: center;
     gap: 3rem;
 }
 

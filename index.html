@@ -10,29 +10,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+  <main>
         <!-- Sección BILLETERA -->
-      <div class="billetera-gastos">
-        <section class="billetera">
-            <h1>Billetera App</h1>
+    <section class="billetera">
+        <h1>Billetera App</h1>
         <div class="datosUser">
-         <div class="input1">
+            <!-- INPUT 1 -->
+          <div class="input1">
             <label for="dineroDisponible" class="labelDinero"> Dinero Disponible</label>
             <input class="border" id="dineroDisponible" type="number">
-         </div>
-            <label for="gasto"> Gasto
-                <input class="border" id="gasto" type="number">
-            </label>
-            <label for="monto"> Monto
-                <input id="monto" class="border" type="number">
-            </label><i class="bi bi-plus-lg"></i>
+          </div>
+        <div class="monto-gasto"> 
+          <!-- INPUT 2 -->
+          <div class="input2">
+            <label for="gasto" class="labelGasto"> Gasto</label>
+            <input class="border" id="gasto" type="text">
+          </div>
+          <!-- INPUT 3 -->
+          <div class="input3">
+            <label for="monto" class="labelMonto"> Monto</label>
+            <input id="monto" class="border" type="number">
+            <i class="bi bi-plus-lg"></i>
+          </div>
+        </div>
         </div>    
         </section>
         <!-- SECCIÓN DE LOS GASTOS -->
         <section class="gastos">
             <h2>Gastos</h2>
         </section>
-      </div>    
+    </main>  
         <!-- SECCIÓN DEL BALANCE -->
         <section class="balance">
             <div class="ingresoTotal">
@@ -48,6 +55,6 @@
                 <p>5.000$</p>
             </div>
         </section>
-    </main>
+    
 </body>
 </html>

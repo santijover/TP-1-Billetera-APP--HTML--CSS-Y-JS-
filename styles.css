@@ -11,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.billetera-gastos{
+main{                   /* Billetera + Gastos en MAIN */
     width: 100vw;
     height: 80vh;
     display: flex;
@@ -22,55 +22,89 @@ body{
 
 .billetera{
     width: 650px;
-    height: 400px;
+    height: 350px;
     border-radius: 10px 100px / 120px;
     background-color: var(--colorBilletera);
-    padding: 15px;
+    
+    padding-left: 2.5rem;
 }
 .gastos{
     width: 650px;
-    height: 400px;
+    height: 350px;
     border-radius: 10px 100px / 120px;
     background-color: var(--colorGastos);
     
 
-    padding: 15px;
+    padding-left: 2.5rem;
 }
 
 .balance{
     display: flex;
     justify-content: space-around;
 }
-/* SOBRE LOS INPUTS */
+/* PROPIEDADES SOBRE LOS INPUTS EN GENERAL */
+
 .datosUser{
     margin-top: 3rem;
-    
-}
-
-.input1{
-    padding-bottom: 2rem;
-    position: relative;
-    
-}
-.labelDinero{
-    position: absolute;
-    right: 510px;
-    bottom: 62px;
-}
-#dineroDisponible{
-    width: 30rem;
-    height: 2rem;
-    padding-top: 20px;
-    padding-left: 1rem;
-    
 }
 .border{
     border: none;
     background-color: var(--colorGastos);
     border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 3rem;
+    padding-top: 20px;
+    padding-left: 1rem;
 }
-
 input:active{
     border-color: #3f0000;
     
 }
+
+/* PRIMER INPUT */
+.input1{
+    padding-bottom: 2rem;
+    position: relative;
+    margin-bottom: 2rem;
+    
+}
+.labelDinero{
+    position: absolute;
+    left: 0.8rem;
+    top: 0.6rem;
+}
+#dineroDisponible{
+    width: 30rem;
+}
+
+/* SEGUNDO INPUT */
+
+.input2{
+    position: relative;
+}
+.labelGasto{
+    position: absolute;
+    left: 0.8rem;
+    top: 0.6rem;
+}
+
+/* TERCER INPUT */
+.input3{
+    position: relative;
+    
+}
+.labelMonto{
+    position: absolute;
+    left: 0.8rem;
+    top: 0.6rem;
+}
+/*  */
+.monto-gasto{
+    display: flex;
+    gap: 3rem;
+}
+
+
+
+

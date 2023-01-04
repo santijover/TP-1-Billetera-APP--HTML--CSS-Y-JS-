@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 :root{
     --colorBilletera: #DEEF75;
     --colorFondo: #333333;
@@ -7,10 +11,7 @@ html{
     box-sizing: border-box;
     font-family: 'Arimo', sans-serif;;
 }
-body{
-    margin: 0;
-    padding: 0;
-}
+
 main{                   /* Billetera + Gastos en MAIN */
     width: 100vw;
     height: 80vh;
@@ -21,26 +22,31 @@ main{                   /* Billetera + Gastos en MAIN */
 }
 
 .billetera{
-    width: 650px;
-    height: 350px;
+    width: 40vw;
+    height: 40vh;
     border-radius: 10px 100px / 120px;
     background-color: var(--colorBilletera);
-    
+    padding-top: 1rem;
     padding-left: 2.5rem;
 }
 .gastos{
-    width: 650px;
-    height: 350px;
+    width: 40vw;
+    height: 40vh;
     border-radius: 10px 100px / 120px;
     background-color: var(--colorGastos);
+    padding-top: 1rem;
+    padding-left: 2.5rem;
     
 
-    padding-left: 2.5rem;
+    
 }
 
 .balance{
+    width: 100vw;
+    height: 20vh;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 h1{
@@ -54,7 +60,13 @@ i{
 /* PROPIEDADES SOBRE LOS INPUTS EN GENERAL */
 
 .datosUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 1rem;
+    background-color: red;
+    height: 75%;
+    width: 95%;
 }
 .border{
     border: none;
@@ -63,7 +75,7 @@ i{
     font-size: 1rem;
     font-weight: 600;
     height: 3rem;
-    padding-top: 20px;
+    padding-top: 1.3rem;
     padding-left: 1rem;
 }
 input:active{
@@ -84,13 +96,14 @@ input:active{
     top: 0.6rem;
 }
 #dineroDisponible{
-    width: 30rem;
+    width: 72%;
 }
 
 /* SEGUNDO INPUT */
 
 .input2{
     position: relative;
+    
 }
 .labelGasto{
     position: absolute;
@@ -111,8 +124,12 @@ input:active{
 /*  */
 .monto-gasto{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    background-color: blue;
+    height: 40%;
+    
     gap: 3rem;
+    
 }
 
 

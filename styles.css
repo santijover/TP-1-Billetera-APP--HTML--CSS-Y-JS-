@@ -11,6 +11,7 @@ html{
     box-sizing: border-box;
     font-family: 'Arimo', sans-serif;;
 }
+#balanceTop{display: none;}
 
 .billetera-gastos{                   
     width: 100vw;
@@ -40,8 +41,6 @@ html{
     padding-top: 1rem;
     padding-left: 2.5rem;
     
-
-    
 }
 
 .balance{
@@ -50,6 +49,7 @@ html{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--colorGastos)
 }
 
 h1{
@@ -136,8 +136,6 @@ input:active{
 }
 #monto{
     width: 90%;
-    
-    
 }
 
 
@@ -156,9 +154,10 @@ input:active{
 /* media queries para tablet (ajuste vertical)*/
 
 
+
 @media (max-height: 600px){
     .gastos, .billetera{
-        min-height: 230px;
+        min-height: 200px;
     }
 }
 @media (min-height: 700px){
@@ -181,14 +180,40 @@ input:active{
 }
 
 /* celular */
-/* @media (max-width: 600px){
+
+
+
+@media (max-width: 600px){
     .balance{
-        
-        position: absolute;
-        top: -1rem;
+        display: none;
+    }
+    #balanceTop{
+        height: 10vh;
+        display: flex;
 
     }
-} */
+    .billetera-gastos{
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .billetera{
+        margin-top: 1rem;
+    }
+    .gastos{
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 600px) and (max-height: 930px){
+    
+    .billetera-gastos{
+        
+        
+    }
+}
 
 
 /* .balance{

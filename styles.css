@@ -12,7 +12,7 @@ html{
     font-family: 'Arimo', sans-serif;;
 }
 
-main{                   /* Billetera y Gastos en MAIN */
+.billetera-gastos{                   
     width: 100vw;
     height: 80vh;
     display: flex;
@@ -65,11 +65,12 @@ i{
 .datosUser{
     display: flex;
     flex-direction: column;
+    
     justify-content: center;
-    margin-top: 1rem;
-    height: 75%;
+    /* margin-top: 1rem; */
+    height: 85%;
     width: 95%;
-    background-color: green;
+    
 }
 .border{
     border: none;
@@ -78,6 +79,7 @@ i{
     font-size: 1rem;
     font-weight: 600;
     height: 3rem;
+    
     padding-top: 1.3rem;
     padding-left: 1rem;
 }
@@ -86,11 +88,12 @@ input:active{
     
 }
 
+
 /* PRIMER INPUT */
 .divDinero{
     /* padding-bottom: 2rem; */
     position: relative;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
    
     
 }
@@ -123,6 +126,7 @@ input:active{
 /* TERCER INPUT */
 .divMonto{
     position: relative;
+    
 }
 
 .labelMonto{
@@ -132,6 +136,8 @@ input:active{
 }
 #monto{
     width: 90%;
+    
+    
 }
 
 
@@ -144,10 +150,60 @@ input:active{
     height: 40%;
     width: 100%;
     gap: 1rem;
-    background-color: red;
+    
     
 }
+/* media queries para tablet (ajuste vertical)*/
 
 
+@media (max-height: 600px){
+    .gastos, .billetera{
+        min-height: 230px;
+    }
+}
+@media (min-height: 700px){
+    .gastos, .billetera{
+        max-height: 300px;
+    }
+}
+
+/* ajuste horizontal */
+@media (max-width: 725px){
+    .gastos, .billetera{
+        min-width: 250px;
+    }
+    
+}
+@media (min-width: 1660px){
+    .gastos, .billetera{
+        max-width: 621px;
+    }
+}
+
+/* celular */
+/* @media (max-width: 600px){
+    .balance{
+        
+        position: absolute;
+        top: -1rem;
+
+    }
+} */
 
 
+/* .balance{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+/* .billetera-gastos{                   
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--colorFondo);
+} */

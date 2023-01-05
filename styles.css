@@ -147,8 +147,11 @@ input:active{
 
 
 @media (max-height: 600px){
-    .gastos, .billetera{
+    .billetera{
         min-height: 200px;
+    }
+    .gastos{
+        min-height: 100px;
     }
 }
 @media (min-height: 700px){

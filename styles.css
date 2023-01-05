@@ -12,7 +12,7 @@ html{
     font-family: 'Arimo', sans-serif;;
 }
 
-main{                   /* Billetera + Gastos en MAIN */
+main{                   /* Billetera y Gastos en MAIN */
     width: 100vw;
     height: 80vh;
     display: flex;
@@ -21,17 +21,20 @@ main{                   /* Billetera + Gastos en MAIN */
     background-color: var(--colorFondo);
 }
 
-.billetera{
-    width: 40vw;
-    height: 40vh;
+.billetera{     /* Cambiar vw y vh por % */
+    
+    width: 35%;
+    height: 50%;
     border-radius: 10px 100px / 120px;
     background-color: var(--colorBilletera);
     padding-top: 1rem;
     padding-left: 2.5rem;
+    
 }
 .gastos{
-    width: 40vw;
-    height: 40vh;
+    
+    width: 35%;
+    height: 50%;
     border-radius: 10px 100px / 120px;
     background-color: var(--colorGastos);
     padding-top: 1rem;
@@ -64,9 +67,9 @@ i{
     flex-direction: column;
     justify-content: center;
     margin-top: 1rem;
-    background-color: red;
     height: 75%;
     width: 95%;
+    background-color: green;
 }
 .border{
     border: none;
@@ -84,10 +87,11 @@ input:active{
 }
 
 /* PRIMER INPUT */
-.input1{
-    padding-bottom: 2rem;
+.divDinero{
+    /* padding-bottom: 2rem; */
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+   
     
 }
 .labelDinero{
@@ -97,11 +101,13 @@ input:active{
 }
 #dineroDisponible{
     width: 72%;
+    
+    
 }
 
 /* SEGUNDO INPUT */
 
-.input2{
+.divGasto{
     position: relative;
     
 }
@@ -110,25 +116,35 @@ input:active{
     left: 0.8rem;
     top: 0.6rem;
 }
+#gasto{
+    width: 90%;
+}
 
 /* TERCER INPUT */
-.input3{
+.divMonto{
     position: relative;
-    
 }
+
 .labelMonto{
     position: absolute;
     left: 0.8rem;
     top: 0.6rem;
 }
+#monto{
+    width: 90%;
+}
+
+
+
 /*  */
 .monto-gasto{
     display: flex;
-    /* align-items: center; */
-    background-color: blue;
+    align-items: center;
+    /* background-color: blue; */
     height: 40%;
-    
-    gap: 3rem;
+    width: 100%;
+    gap: 1rem;
+    background-color: red;
     
 }
 
